@@ -41,7 +41,8 @@ jQuery(document).ready(function() {
 $('.to-top a').on('click', function(e) {
     e.preventDefault();
     if($(window).scrollTop() != 0) {
-        $('html, body').stop().animate({scrollTop: 0}, 1000);
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
     }
 });
 
