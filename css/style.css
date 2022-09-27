@@ -322,9 +322,8 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
     font-family: 'Noto Sans TC', sans-serif;
 }
 .jumbotron .col-md-8 p{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #fff;
-    font-family: 'Noto Sans TC', sans-serif;
 }
 .context {
     margin: 60px 60px 60px 60px ;
@@ -344,4 +343,8 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 }
 .footer p{
     color: #fff;
+}
+
+.main-text a{
+    color:rgb(127, 193, 255);
 }
