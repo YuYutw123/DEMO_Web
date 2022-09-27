@@ -78,3 +78,14 @@ $('.section-container').waypoint(function(direction) {
 $('.sidebar').mCustomScrollbar({
     theme: "minimal-dark"
 });
+
+function copyInput() {
+    var copyText = "佑仔#8021";
+    navigator.clipboard.writeText(copyText).then(()=>{
+        alert("已複製「佑仔#8021」")
+    })
+    .catch(err=>
+    {
+        console.error("出錯")
+    })
+  }
