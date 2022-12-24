@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ad" style="background-color: black; height: 100px; width:100px;" >
+        <button type="button" id="close">X</button>
+    </div>
+    <button id="btn" type="button" value="hehe" >Click Me!</button>
+    <button id="mar" type="button" value="hehe" >marquee</button>
+    <h1 id="text">haha</h1>
+    <marquee id="hehe" behavior="alternate" direction="right" scrollamount=500 width="250" height="200">
+        <h1>haha</h1>
+    </marquee>
+    
+    <script>
+        function blue(){
+            let txt = document.getElementById("text");
+            txt.style="color:blue;"; 
+        }
+        function red(){
+            let txt = document.getElementById("text");
+            txt.style="color:red;"; 
+
+        }function yellow(){
+            let txt = document.getElementById("text");
+            txt.style="color:yellow;"; 
+
+        }
+        function close(){
+            let txt = document.getElementById("ad");
+            txt.style="display:none;"; 
+        }
+        let botton = document.getElementById("btn");
+        let botton2 = document.getElementById("mar");
+        let botton3 = document.getElementById("close");
+        botton.addEventListener("mouseover", blue, false);
+        botton.addEventListener("click", red, false);
+        botton.addEventListener("mouseout", yellow, false);
+        botton3.addEventListener("click", close, false);
+    </script>
+</body>
+</html>
